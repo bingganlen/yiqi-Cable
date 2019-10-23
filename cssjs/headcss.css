@@ -1,7 +1,7 @@
 /*内页导航*/
 #bodycon{ margin-top:30px; }
 .strong_title{display: none;}
-.mianbxContent{text-align: left !important; font-size:16px; line-height: 40px !important; width:732px !important; margin-bottom: 12px !important; height:40px !important; padding-left: 30px;background:url(../img/20170228201911_374059145.jpg) no-repeat center top ;}
+.mianbxContent{text-align: left !important; font-size:16px; line-height: 40px !important; /*width:732px !important;*/width:1076px !important; margin-bottom: 12px !important; height:40px !important; padding-left: 30px;background:url(../img/20170228201911_374059145.jpg) no-repeat center top ;}
 .mianbxContent a{font-size: 16px !important;}
 .mianbxContent a:hover{font-size: 16px !important;}
 
