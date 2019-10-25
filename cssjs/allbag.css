@@ -50,7 +50,7 @@ div,ul,li,span,p,img,h1,h2,h3,h4,h5,h6,dl,dt,dd{margin:0px; padding:0px; list-st
 .nav .a_nav{
     margin-right: 1px;    background: url(../img/20170228194514_1115835218.jpg) no-repeat center;
 }
-.menu ul {    position: absolute;  top: 54px;  left: 0;  z-index: 9999;  opacity: 0;  background: #d31121;
+.menu ul {    position: absolute;  top: 54px;  left: 0;  z-index: 9999;  opacity: 0;  background: #11aed3;/* #d31121 */
     -webkit-transition: opacity .25s ease .1s;
     -moz-transition: opacity .25s ease .1s;
     -o-transition: opacity .25s ease .1s;
@@ -70,7 +70,7 @@ div,ul,li,span,p,img,h1,h2,h3,h4,h5,h6,dl,dt,dd{margin:0px; padding:0px; list-st
 line-height: 36px;
     overflow: visible;}
 .menu ul li a {
-    width: 125px;    border-bottom: 1px solid #fa2c3d;    text-align:center;    font-size: 12px;}
+    width: 125px;   border-bottom: 1px solid #1a3b98; /* border-bottom: 1px solid #fa2c3d; */    text-align:center;    font-size: 12px;}
 .menu ul li:last-child a { border: none; }
 
 
