@@ -42,9 +42,17 @@
         /* 两个按钮 */
         .selectmouse{
             width: 96%;
-            height: auto;
+            height: 30px;
         }
+        .selectmouse ul {
+            list-style: none;
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+        }
+
         .selectmouse ul li{
+            font-size:13px;
             list-style: none;
             float: left;
             line-height: 20px;
@@ -56,6 +64,11 @@
             cursor: hand;
             margin-bottom: 4px;
             _margin-bottom: 4px;
+        }
+        .colorbtn{
+            background:#F0F0F0;
+            font-size: 15px;
+        }
         }
             
 
@@ -98,20 +111,22 @@
                             </div>
                         </div>
                        
-                        
-
                         <div class="form-group">
-                            <div class="selectmouse">
+                        <div class="selectmouse">
                                  <ul>
-                                    <li id="getd1" onmousemove=""
-                                    style="background:#F0F0F0;margin-left:0px;">
-                                        <h3>详情说明</h3>
+                                    <li id="getd1" onmousemove="mousedshow(1)" class="colorbtn">
+                                        <span>详情说明</span>
                                     </li>
-                                    <li id="getd2" onmousemove="" >  
-                                        <h3>商品介绍</h3>
+                                    <li id="getd2" onmousemove="mousedshow(2)" >  
+                                        <span>商品介绍</span>
                                     </li>
                                  </ul>
                             </div>
+                        </div>
+
+
+                        <div class="form-group" id="detail1">
+                            <br>
                                 <!-- <textarea  class="form-control"  name="remark" value="" id="remark" placeholder="备注" style="width:100%;"></textarea> -->
 
                             <p>YJV交联聚乙烯绝缘的优点=交联聚乙烯绝缘电力电缆具有卓越的热一机械性能，优异的电气性能和耐化学腐蚀性能，还具有结构简单，重量轻，敷设不受落差限制等优点，是目前广泛于城市电网，矿山和工厂的新颖电缆。电缆的绝缘-交联聚乙烯是利用化学方法和物理方法使线型分子结构的聚乙烯转化为立体网状结构的聚乙烯，从而大幅度的提高了聚乙烯的热机械性，从而保持了优异的电气性能。交联聚乙烯绝缘电力电缆导体 额定工作温度为90°，比聚氯乙烯绝缘聚乙烯绝缘电缆均高，所以电缆的载流量也进一步提高。</p>
@@ -123,6 +138,44 @@
                             <p>耐火型电缆（电线）的特点是电缆除了能在正常的工作条件下传输电力，还可在燃烧的状况下仍能保持一定时间的安全运行，其使用在对电缆特性有要示的场合。耐火电缆（电线）分为A类和B类二个级别，可根据不同的要求选择不同类别的耐火电缆。</p>
 
                                 
+                        </div>
+
+                        <div class="form-group" id="detail2" style="display: none;">
+                            <pre>
+使用说明： 
+    1、 电缆导体的允许长期最高工作温度为90℃。
+    2、 短路时（最长持续时间不超过5秒） 电缆导体的最高温
+    度不超过250℃。
+    3、 电缆敷设时的环境温度不得低于0℃。
+    4、 电缆的最小弯曲半径： 三芯电缆不小于电缆外径的15
+    倍； 单芯电缆不小于电缆外径的20倍。
+    5、 电缆的工频额定电压U0/U为0.6/1kV~26/35kV。
+    U0： 电缆设计用的导体对地或金属屏蔽之间的额定工频电压， 称相电压；
+    U： 电缆设计用的导体间的额定工频电压， 称线电压；
+    Um： 设备可承受的“最高系统电压”的最大值。
+
+    用途：给住宅及商业用建筑及产业用配电电路提供稳定的电力，医院、地下商场、机场、大型建筑、地铁等需要高阻燃多重设施和需要抑制气体和烟气发生的场所。
+
+    特点：以最高的技术和研究为基础，通过电缆材料的自身的开发和稳定的工程，发挥优秀的性能，具有适合不同功能的最佳成品尺寸。
+              拥有最佳的电缆构成和结构，便于施工、连接容易。
+              环保型电缆特别使用了不含环境有害物质的新材料。
+
+    主要功能：常用于住宅及商业用建筑及产业用配电电路。
+    阻燃：以防止二次火灾扩散为目的(Z-系列)。
+    耐火：消防用(N-)。
+    低毒性阻燃：使用对环境无害的物质材料，火灾时抑制发生毒气和烟气的环保型产品(WDZ-系列)。
+    防水型：抑制绝缘体水树的产生(ZS-系列)。
+    铠装型：为保护绝缘线芯的金属外铠装。
+
+    在过去15至20年来交联聚乙烯绝缘电缆的需求迅速增长，这种类型的电缆已成为电力电缆的主要类型。
+
+    成天泰电缆积极开发和应用交联聚乙烯绝缘电缆最近的制造技术，并一直在不断努力获取更多的从事质量稳定，并产生更高电压的交联聚乙烯绝缘电缆（超过500千伏）。
+
+    本目录中的产品是基于了GB/T12706-2008规范。
+
+
+    本产品适用于固定敷设在交流50Hz， 额定电压35kV及以下的电力输配电线路上作输送电能用。 与聚氯乙烯绝缘电力电缆相比， 交联电力电缆产品不仅具有优异的电气性能、 机械性能、 耐热老化性能、 耐环境应力和耐化学腐蚀性能的能力，而且结构简单， 重量轻， 不受敷设落差限制， 长期工作温度高（90℃）等特点。
+                            </pre>
                         </div>
           
 
@@ -144,24 +197,27 @@
 
 
         <script type="text/javascript">
-                //模态框居中问题 start
-                /*function centerModals() {
-                    $('.modal').each(function(i) {
-                        var $clone = $(this).clone().css('display', 'block').appendTo('body');
-                        var top = Math.round(($clone.height() - $clone.find('.modal-content').height()) / 2);
-                        top = top > 50 ? top : 0;
-                        $clone.remove();
-                        $(this).find('.modal-content').css("margin-top", top - 50);
-                    });
-                }
-                // 在模态框出现的时候调用垂直居中方法
-                $('.modal').on('show.bs.modal', centerModals);
-                // 在窗口大小改变的时候调用垂直居中方法
-                $(window).on('resize', centerModals);
-                //模态框居中问题end
-*/
-
+            //测试  显示
             $("#showModal").modal('show')
+
+            //鼠标触摸 显示隐藏
+            function mousedshow(num){
+               
+                if (num==1) {
+                    $("#getd1").addClass("colorbtn");
+                    $("#getd2").removeClass("colorbtn");
+                    $("#detail1").css("display","block");
+                    $("#detail2").css("display","none");
+                }
+                if (num==2) {
+                    $("#getd2").addClass("colorbtn");
+                    $("#getd1").removeClass("colorbtn");
+                    $("#detail2").css("display","block");
+                    $("#detail1").css("display","none");
+                }
+            }
+
+
         </script>
 
         <script type="text/javascript">
